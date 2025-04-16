@@ -1,0 +1,18 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "10.0.138.13",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "cef",
+      "database": "vti_ivm",
+      "username": "vti_dev",
+      "password": "IVm@2020"
+    }
+  ]
+}

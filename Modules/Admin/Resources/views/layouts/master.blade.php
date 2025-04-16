@@ -1,0 +1,10 @@
+@extends('layouts.admin')
+@section('sidebar')
+    @include('admin::layouts.partials.sidebar')
+@endsection
+@section('top-sidebar')
+    @include('admin::layouts.partials.top-bar')
+@endsection
+@section('logout-modal')
+    @include('admin::layouts.partials.logout-modal')
+@endsection

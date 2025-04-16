@@ -1,0 +1,15 @@
+{
+    "name": "Merchant",
+    "alias": "merchant",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Merchant\\Providers\\MerchantServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "Helper/Helper.php"
+    ],
+    "requires": []
+}

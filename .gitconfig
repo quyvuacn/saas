@@ -1,0 +1,13 @@
+[core]
+	excludesfile = /Users/v002773/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = quan.buivan
+	email = quan.buivan@vti.com.vn
+[credential]
+	helper = "!f() { /var/www/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/node /tmp/vscode-remote-containers-58dcc00a-d6a8-477f-aba0-e49beeccc397.js git-credential-helper $*; }; f"

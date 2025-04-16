@@ -1,0 +1,15 @@
+{
+    "name": "Admin",
+    "alias": "admin",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Admin\\Providers\\AdminServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "Helper/Helper.php"
+    ],
+    "requires": []
+}

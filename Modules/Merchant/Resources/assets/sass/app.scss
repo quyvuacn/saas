@@ -1,0 +1,48 @@
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+//===================================
+//MERCHANT REQUEST LIST *************
+//===================================
+
+#mc-request-list {
+    .add-request {
+
+    }
+}
+
+//===================================
+//MACHINE CONFIG PRICE *************
+//===================================
+
+#sync-machine {
+    .avatar.pack-label {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: -3px;
+        background: red;
+        line-height: 1;
+        display: inline-flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 3px 3px 2px #d0d0d0;
+    }
+}
+
+#bank-account-list{
+    .bank-item{
+        .list-group-item span{
+            font-size: 14px;
+            flex-basis: 150px;
+            min-width: 150px;
+        }
+
+        .list-group-item input{
+            flex:1;
+        }
+    }
+}

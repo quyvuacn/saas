@@ -1,0 +1,13 @@
+@extends('layouts.admin')
+@section('extra-css')
+    @include('merchant::layouts.partials.head-css')
+@endsection
+@section('sidebar')
+    @include('merchant::layouts.partials.sidebar')
+@endsection
+@section('top-sidebar')
+    @include('merchant::layouts.partials.top-bar')
+@endsection
+@section('logout-modal')
+    @include('merchant::layouts.partials.logout-modal')
+@endsection

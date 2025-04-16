@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - namespace.yaml
+  - configmap.yaml
+  - secret.yaml
+  - deployment.yaml
+  - service.yaml
+
+labels:
+- pairs:
+    app.kubernetes.io/name: vti-es-ivm
+    app.kubernetes.io/part-of: vti-es-ivm
+  includeSelectors: true
+
+namespace: vti-es-ivm

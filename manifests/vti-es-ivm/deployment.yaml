@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vti-es-ivm
+  namespace: vti-es-ivm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vti-es-ivm
+  template:
+    metadata:
+      labels:
+        app: vti-es-ivm
+    spec:
+      containers:
+      - name: vti-es-ivm
+        image: saas:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
+        envFrom:
+        - configMapRef:
+            name: vti-es-ivm-config
+        - secretRef:
+            name: vti-es-ivm-secret
+        readinessProbe:
+          httpGet:
+            path: /js/sb-admin-2.min.js
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        livenessProbe:
+          httpGet:
+            path: /js/sb-admin-2.min.js
+            port: 80
+          initialDelaySeconds: 15
+          periodSeconds: 20
+      volumes:
+      - name: php-config
+        configMap:
+          name: vti-es-ivm-php-config 

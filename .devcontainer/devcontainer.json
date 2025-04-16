@@ -1,0 +1,31 @@
+{
+  "name": "VTI ES IVM Frontend",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dashboard",
+  "workspaceFolder": "/var/www",
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "moby": true,
+      "dockerDashComposeVersion": "v2"
+    },
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/mpriscella/features/kind:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "mikestead.dotenv",
+        "onecentlin.laravel-extension-pack",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-azuretools.vscode-docker",
+        "cweijan.vscode-database-client2",
+        "cweijan.vscode-redis-client"
+      ]
+    }
+  },
+  "forwardPorts": [8000]
+}
